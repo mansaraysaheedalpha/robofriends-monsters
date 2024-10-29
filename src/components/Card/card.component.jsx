@@ -13,7 +13,7 @@ const Card = ({ filteredRobots }) => {
                     )
                     )
                 ) : (
-                    <h4>Synchronizing...</h4>
+                    <h3 className='fs-2 fw-larger bg-muted p-3'>Synchronizing....</h3>
                 )
             }
         </div>

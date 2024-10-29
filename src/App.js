@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import SearchBox from './components/Card/SearchBox/searchbox.components';
+import SearchBox from './components/SearchBox/searchbox.component';
 import Card from './components/Card/card.component';
 import './App.css';
 
@@ -26,6 +26,7 @@ const App = (props) => {
             <h1 className='text-center'>MY ROBOFRIENDS</h1>
             <div className='search text-center'>
                 <SearchBox
+                    type='search'
                     className='searchbox text-center'
                     placeholder='Search robots'
                     searchChange={onSearchChange} />
