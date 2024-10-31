@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import SearchBox from './components/SearchBox/searchbox.component';
 import Card from './components/Card/card.component';
-import Scroll from './scroll';
+import Scroll from './components/scroll';
+import ErrorBoundry from './components/ErrorBoundry';
 import './App.css';
 
 const App = (props) => {
@@ -34,9 +35,11 @@ const App = (props) => {
             </div>
 
             <Scroll>
-                <div className='text-center'>
-                    <Card filteredRobots={filteredRobots} />
-                </div>
+                <ErrorBoundry>
+                    <div className='text-center'>
+                        <Card filteredRobots={filteredRobots} />
+                    </div>
+                </ErrorBoundry>
             </Scroll>
 
         </>
