@@ -1,9 +1,9 @@
+
 import './cardlist.styles.css';
 
 const CardList = (props) => {
     const { name, email, id } = props.robot
     return (
-
         <div className="card" style={{ width: '18rem' }}>
             <img src={`https://robohash.org/${id}?set=set2`} className="card-img-top" alt={name} />
             <div className="card-body">
